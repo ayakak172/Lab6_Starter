@@ -118,7 +118,6 @@ class RecipeCard extends HTMLElement {
 	 *                        }
 	 */
 	set data(data) {
-		console.log(data);
 		// If nothing was passed in, return
 		if (!data) return;
 
@@ -143,7 +142,7 @@ class RecipeCard extends HTMLElement {
 			<img src="/assets/images/icons/${data["rating"]}-star.svg" alt="${data["rating"]} stars">
 			<span>(${data["numRatings"]})</span>
 		</div>
-		<time>${data["lengthTime"]}/time>
+		<time>${data["lengthTime"]}</time>
 		<p class="ingredients">
 			${data["ingredients"]}
 		</p>
